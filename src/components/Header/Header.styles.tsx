@@ -12,15 +12,15 @@ export const StyledSection = styled.section`
             flex-wrap: wrap;
             align-items: center;
             h1 {
-                max-width: 50rem;
+                max-width: 30rem;
                 p {
-                    max-width: 50rem;
-                    color: ${({ theme }) => theme.colors.fontP};
+                    color: ${({ theme }) => theme.colors.font2};
                     font-size: 1rem;
                 }
                 span {
-                    color: ${({ theme }) => theme.colors.fontSpan};
-                    font-size: 6rem;
+                    color: ${({ theme }) => theme.colors.font1};
+                    //Note that using clamp() for font sizes, as in these examples, allows you to set a font-size that grows with the size of the viewport, but doesn't go below a minimum font-size or above a maximum font-size. It has the same effect as the code in Fluid Typography but in one line, and without the use of media queries.
+                    font-size: clamp(2rem, 10vw, 6rem);
                 }
             }
         }
@@ -30,21 +30,37 @@ export const StyledSection = styled.section`
             display: flex;
             justify-content: start;
             gap: 2rem;
+            flex-wrap: wrap;
+            a {
+                width: max-content;
+            }
             .header__link-mywork {
-                background-color: ${({ theme }) => theme.colors.colorBlue};
+                background-color: ${({ theme }) => theme.colors.btBlue};
             }
             .header__link-resume {
-                border: 1px solid ${({ theme }) => theme.colors.colorBlue};
+                border: 1px solid ${({ theme }) => theme.colors.btBlue};
             }
         }
 
-        &__animation {
+        &__picture {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
             img {
-                width: 20rem;
+                max-width: 25rem;
+                width: 80%;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+
+        .header {
+            &__info {
+
+            }
+            &__picture{
+                display: none;
             }
         }
     }

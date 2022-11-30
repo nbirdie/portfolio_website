@@ -1,23 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { StyledNav, StyledLogo } from "./Navbar.styles";
-import { NavbarLinks } from "./links";
+import { Burger } from "../Burger";
 
-function Navbar() {
+
+export const Navbar = () => {
+
     return (
         <StyledNav>
             <div className="container nav__container">
-                <StyledLogo>S</StyledLogo>
-                <ul className="nav__list">
-                    {NavbarLinks.map(({ path, text }) => (
-                        <li key={path} className="nav__link">
-                            <a>{text}</a>
-                        </li>
-                    ))}
-                </ul>
+                <StyledLogo>Portfolio<p>S</p></StyledLogo>
+                <Burger/>
             </div>
         </StyledNav>
     );
 }
 
-export default Navbar;

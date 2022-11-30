@@ -2,15 +2,14 @@ export const baseTheme = {
     colors: {
         bgMain: '#1f1f1f',
         bgBlurred: "#0e141b",
-        fontPrimary: '#ffffff',
-        fontH1: '#ffffff',
-        fontSpan: '#ffffff',
-        fontH3: "#757f8a",
-        fontP: "#9ca8b4",
-        fontBt: "#ffffff",
+        bgLight: '#ffffff',
+        font1: '#ffffff', //main text
+        font2: "#757f8a", //p
+        font3: "#9ca8b4", //subsections
         fontSkills: "#ffffff",
         colorBlack: "#081c30",
-        colorBlue: "#1378ef"
+        btBlue: "#1378ef",
+
 },
 
 }

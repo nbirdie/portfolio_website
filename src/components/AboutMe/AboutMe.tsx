@@ -1,10 +1,8 @@
 import React from 'react'
-import {} from "./AboutMe.styles"
+import {StyledSection} from "./AboutMe.styles"
 
-function AboutMe() {
+export const AboutMe = () => {
   return (
-    <div>AboutMe</div>
+    <StyledSection>AboutMe</StyledSection>
   )
 }
-
-export default AboutMe

@@ -1,11 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
-import { GlobalStyle, baseTheme } from "./styles";
-import AboutMe from "./components/AboutMe/AboutMe";
+import { GlobalStyle, baseTheme } from "./styles"
+import { AboutMe, Header, Navbar, Projects, Footer } from "./components";
+
 
 function App() {
     return (

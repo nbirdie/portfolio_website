@@ -2,8 +2,10 @@ import React from "react";
 import { FC } from "react";
 import { StyledSection } from "./Header.styles";
 import FrontendDeveloper from "../../images/frontend.png";
+import working from "../../images/working.png";
+import { Canvas } from "../Canvas";
 
-const Header: FC = () => {
+export const Header: FC = () => {
     return (
         <StyledSection>
             <div className="container">
@@ -21,11 +23,8 @@ const Header: FC = () => {
                       <a className="header__link-resume btn">View Resume</a>
                     </div>
                 </div>
-                <div className="header__animation">
-                    <img
-                        src={FrontendDeveloper}
-                        alt="frontend developer icon"
-                    />
+                <div className="header__picture">
+                    <img src={working} alt="picture of working woman" />
                 </div>
 
                 <h1></h1>
@@ -34,4 +33,3 @@ const Header: FC = () => {
     );
 };
 
-export default Header;

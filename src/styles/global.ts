@@ -18,11 +18,15 @@ export default createGlobalStyle`
     html{
         scroll-behavior: smooth;
         background-color: ${baseTheme.colors.bgMain};
-        color: ${baseTheme.colors.fontPrimary};
+        color: ${baseTheme.colors.font1};
         max-width: 1280px;
         margin: 0 auto;
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+    body {
+        max-width: 1280px;
+        min-width: 320px;
     }
     h1,
     h2,

@@ -7,6 +7,10 @@ export const StyledNav = styled.nav`
     z-index: 100;
     margin-top: 2rem;
 
+    img {
+        display: none;
+    }
+
     &.scrolled {
         background-color: ${({ theme }) => theme.colors.bgBlurred};
         opacity: 0.8;
@@ -15,38 +19,15 @@ export const StyledNav = styled.nav`
     .nav {
         &__container {
             display: flex;
-            align-items: center;
-        }
-        &__list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-            font-size: 1rem;
-            font-weight: bold;
-            }
-            &__link {
-                position: relative;
-                a {
-                    &::after {
-                        position: absolute;
-                        left: 0;
-                        bottom: -5px;
-                        height: 2px;
-                        width: 0;
-                        background: ${({ theme }) => theme.colors.colorBlue};
-                        content: "";
-                    }
-                    &:hover::after {
-                        width: 100%;
-                        transition: cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s all;
-                    }
-                }
         }
     }
 `;
 
-export const StyledLogo = styled.a`
+export const StyledLogo = styled.div`
+    display: flex;
     font-size: 2.5rem;
-    transform: rotate(23deg);
+    p {
+        font-size: 1rem;
+        transform: rotate(17deg);
+    }
 `;
