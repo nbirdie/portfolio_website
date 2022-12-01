@@ -20,7 +20,7 @@ export const StyledSection = styled.section`
                 span {
                     color: ${({ theme }) => theme.colors.font1};
                     //Note that using clamp() for font sizes, as in these examples, allows you to set a font-size that grows with the size of the viewport, but doesn't go below a minimum font-size or above a maximum font-size. It has the same effect as the code in Fluid Typography but in one line, and without the use of media queries.
-                    font-size: clamp(2rem, 10vw, 6rem);
+                    font-size: clamp(3rem, 10vw, 6rem);
                 }
             }
         }
@@ -31,9 +31,6 @@ export const StyledSection = styled.section`
             justify-content: start;
             gap: 2rem;
             flex-wrap: wrap;
-            a {
-                width: max-content;
-            }
             .header__link-mywork {
                 background-color: ${({ theme }) => theme.colors.btBlue};
             }
@@ -54,7 +51,6 @@ export const StyledSection = styled.section`
         }
     }
     @media (max-width: 768px) {
-
         .header {
             &__info {
 
@@ -64,4 +60,5 @@ export const StyledSection = styled.section`
             }
         }
     }
+
 `;

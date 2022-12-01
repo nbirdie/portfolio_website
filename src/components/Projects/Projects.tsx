@@ -1,8 +1,23 @@
-import React from 'react'
-import {} from "./Projects.styles"
+import React from "react";
+import { FC } from "react";
+import { StyledSection } from "./Projects.styles";
+import { projects } from "../../utils/projects";
+import { Project } from "../Project";
 
-export const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
-}
+export const Projects: FC = () => {
+    return (
+        <StyledSection>
+            <h2>Projects</h2>
+            <p>
+                These are some of the projects I built to practice and get
+                better at the technologies mentioned above.
+            </p>
+            <ul className="projects__list">
+                {projects.map((project, i) => (
+                    <Project key={i} {...project} />
+                ))
+                }
+            </ul>
+        </StyledSection>
+    );
+};

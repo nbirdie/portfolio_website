@@ -26,8 +26,6 @@ export const Header: FC = () => {
                 <div className="header__picture">
                     <img src={working} alt="picture of working woman" />
                 </div>
-
-                <h1></h1>
             </div>
         </StyledSection>
     );

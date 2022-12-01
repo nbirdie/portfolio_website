@@ -1,5 +1,5 @@
-import {createGlobalStyle} from "styled-components"
-import { baseTheme } from "./theme"
+import { createGlobalStyle } from "styled-components";
+import { baseTheme } from "./theme";
 
 //These styles ensure that there is no margin or padding on the page, except in places where they are explicitly stated
 export default createGlobalStyle`
@@ -19,14 +19,14 @@ export default createGlobalStyle`
         scroll-behavior: smooth;
         background-color: ${baseTheme.colors.bgMain};
         color: ${baseTheme.colors.font1};
-        max-width: 1280px;
+        max-width: 1200px;
+        min-width: 320px;
         margin: 0 auto;
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-    body {
-        max-width: 1280px;
-        min-width: 320px;
+        line-height: 1.5;
+        //by default font is 1rem
+        font-size: 1rem;
     }
     h1,
     h2,
@@ -37,11 +37,45 @@ export default createGlobalStyle`
         font-weight: 700;
         letter-spacing: 0.1rem;
     }
+    h2 {
+        position: relative;
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 1.3rem;
+            left: 0;
+            right: 0;
+            height: 0.1rem;
+            width: 45%;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: ${baseTheme.colors.btBlue};
+        }
+        
+    }
+    h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
     button {
         border: none;
     }
     a {
+        display: block;
+        width: max-content;
         cursor: pointer;
+        color: inherit;
         &:hover {
             opacity: 0.8;
         }
@@ -49,16 +83,37 @@ export default createGlobalStyle`
     ul {
         list-style: none;
     }
+    li {
+        font-size: 1rem;
+    }
     .container {
         width: 100%;
-        max-width: 1280px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
     .btn {
-        padding: 0.7rem 1.8rem 0.8rem;
+        padding: 0.6rem 1.8rem 0.7rem;
         text-decoration: none;
         border-radius: 40px;
     }
-`
+    .technologies{
+        &__list{
+            display: flex;
+            align-items:center;
+            justify-content:start;
+            flex-flow: row wrap;
+            gap: 1rem;
+        }
+        &__item {
+            padding: 0.2rem 1.8rem 0.2rem;
+            background: rgba(156, 152, 152, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3.5px);
+            -webkit-backdrop-filter: blur(3.5px);
+            border: 1px solid rgba(156, 152, 152, 0.18);
+            border-radius: 40px;
+        }
+    }
+`;

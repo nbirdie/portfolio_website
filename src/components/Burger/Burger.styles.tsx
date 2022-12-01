@@ -55,8 +55,8 @@ export const StyledRightNav = styled.div<{ open: boolean }>`
                 &::after {
                     position: absolute;
                     left: 0;
-                    bottom: -5px;
-                    height: 2px;
+                    bottom: -0.3rem;
+                    height: 0.1rem;
                     width: 0;
                     background: ${({ theme }) => theme.colors.btBlue};
                     content: "";
