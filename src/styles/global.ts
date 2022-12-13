@@ -91,6 +91,7 @@ export default createGlobalStyle`
         padding-right: 1rem;
         margin: 0 auto;
         max-width: 1200px;
+        min-width: 320px;
         align-items: center;
     }
     .btn {
