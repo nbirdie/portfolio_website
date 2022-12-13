@@ -19,14 +19,13 @@ export default createGlobalStyle`
         scroll-behavior: smooth;
         background-color: ${baseTheme.colors.bgMain};
         color: ${baseTheme.colors.font1};
-        max-width: 1200px;
-        min-width: 320px;
         margin: 0 auto;
-        padding-right: 2rem;
-        padding-left: 2rem;
         line-height: 1.5;
         //by default font is 1rem
         font-size: 1rem;
+    }
+    body {
+        margin: 0 auto;
     }
     h1,
     h2,
@@ -62,7 +61,7 @@ export default createGlobalStyle`
     }
     h5 {
         font-size: 1.2rem;
-        padding-bottom: 1.5rem;
+        
     }
     p {
         font-size: 1rem;
@@ -88,9 +87,11 @@ export default createGlobalStyle`
     }
     .container {
         width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
+        max-width: 1200px;
+        align-items: center;
     }
     .btn {
         padding: 0.6rem 1.8rem 0.7rem;

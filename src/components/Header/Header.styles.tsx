@@ -6,6 +6,9 @@ export const StyledSection = styled.section`
     display: flex;
     align-items: center;
     .header {
+        &__container {
+            display: flex;
+        }
         &__info {
             flex: 1;
             display: flex;

@@ -12,12 +12,13 @@ export const Projects: FC = () => {
                 These are some of the projects I built to practice and get
                 better at the technologies mentioned above.
             </p>
-            <ul className="projects__list">
-                {projects.map((project, i) => (
-                    <Project key={i} {...project} />
-                ))
-                }
-            </ul>
+            <div className="container">
+                <ul className="projects__list">
+                    {projects.map((project, i) => (
+                        <Project key={i} {...project} />
+                    ))}
+                </ul>
+            </div>
         </StyledSection>
     );
 };

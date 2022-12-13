@@ -1,8 +1,33 @@
 import React from 'react'
-import {} from "./Footer.styles"
+import {StyledFooter} from "./Footer.styles"
+import { socials } from '../../utils/socials'
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <StyledFooter>
+      <div className="container footer__container">
+        <div>
+        <p>Thanks for checking my portfolio.</p>
+        <p>I am currently open to work!</p>
+        </div>
+        <div className="footer__contact-info">
+          <h5>Contact Me</h5>
+          <ul className="footer__socials">
+            {socials.map(({Icon, href, label}, i) => (
+              <li key={i}>
+                <a href={href} aria-label={`my ${label} profile`}>
+                    <Icon aria-hidden="true" />
+                  </a>
+              </li>
+            ))}
+          </ul>
+          <p className="footer__contact-gmail">
+              <a href="mailto:eolshadrina@gmail.com">
+                <span>eolshadrina@gmail.com</span>
+              </a>
+            </p>
+        </div>
+      </div>
+    </StyledFooter>
   )
 }

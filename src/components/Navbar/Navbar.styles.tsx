@@ -19,6 +19,7 @@ export const StyledNav = styled.nav`
     .nav {
         &__container {
             display: flex;
+            justify-content: space-between;
         }
     }
 `;

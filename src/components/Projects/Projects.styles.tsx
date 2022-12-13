@@ -9,12 +9,11 @@ export const StyledSection = styled.section`
     justify-content: center;
     .projects {
         &__list {
-            width: 100%;
             padding-top: 2rem;
             padding-bottom: 1.5rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-            gap: 4rem 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 2rem 2rem;
         }
         
     }

@@ -11,26 +11,30 @@ export const AboutMe: FC = () => {
                 You will find a little intro about me and the skills and
                 technologies I use daily.
             </p>
-            <StyledSubSection>
-                <div className="aboutme__info">
-                    <h3>Summary</h3>
-                    <p>
-                        I'm a Frontend Developer whose whole interest is
-                        building interactive, accessible, and responsive
-                        websites. My project section contains some beautiful
-                        websites I've built.</p>
-                        
-                        <p>I'm currently open to Job
-                        opportunities where I can contribute to your business
-                        and make your users happy. Contact me if you're
-                        interested in having a taste of my skills.
-                    </p>
-                    <a className="btn">Contact Me</a>
-                </div>
-                <div className="aboutme__technologies">
-                  <Technologies />
-                </div>
-            </StyledSubSection>
+            <div className="container">
+                <StyledSubSection>
+                    <div className="aboutme__info">
+                        <h3>Summary</h3>
+                        <p>
+                            I'm a Frontend Developer whose whole interest is
+                            building interactive, accessible, and responsive
+                            websites. My project section contains some beautiful
+                            websites I've built.
+                        </p>
+
+                        <p>
+                            I'm currently open to Job opportunities where I can
+                            contribute to your business and make your users
+                            happy. Contact me if you're interested in having a
+                            taste of my skills.
+                        </p>
+                        <a className="btn">Contact Me</a>
+                    </div>
+                    <div className="aboutme__technologies">
+                        <Technologies />
+                    </div>
+                </StyledSubSection>
+            </div>
         </StyledSection>
     );
 };

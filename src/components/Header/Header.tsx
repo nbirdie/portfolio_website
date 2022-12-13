@@ -8,7 +8,7 @@ import { Canvas } from "../Canvas";
 export const Header: FC = () => {
     return (
         <StyledSection>
-            <div className="container">
+            <div className="container header__container">
                 <div className="header__info">
                     <h1>
                         <p>Hello Friend! I'm,</p>

@@ -9,7 +9,7 @@ export const StyledSection = styled.section`
     .aboutme__subtitle {
         color: ${({ theme }) => theme.colors.font3};
     }
-`
+`;
 
 export const StyledSubSection = styled.div`
     padding-top: 2rem;
@@ -20,7 +20,7 @@ export const StyledSubSection = styled.div`
         &__info {
             flex: 1;
             a {
-                background-color: ${({ theme }) => theme.colors.btBlue}
+                background-color: ${({ theme }) => theme.colors.btBlue};
             }
             p {
                 padding-bottom: 2rem;
@@ -34,4 +34,4 @@ export const StyledSubSection = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
     }
-`
+`;
