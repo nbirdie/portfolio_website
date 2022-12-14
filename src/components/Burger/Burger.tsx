@@ -20,7 +20,7 @@ export const Burger: FC = () => {
                 <ul className="nav__list">
                     {NavbarLinks.map(({ path, text }) => (
                         <li key={path} className="nav__link">
-                            <a>{text}</a>
+                            <a href={path} onClick={() => setOpen(false)}>{text}</a>
                         </li>
                     ))}
                 </ul>

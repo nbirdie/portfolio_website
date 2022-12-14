@@ -47,6 +47,7 @@ export const StyledSection = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 500px;
             img {
                 max-width: 25rem;
                 width: 80%;

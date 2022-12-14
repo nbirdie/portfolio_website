@@ -52,6 +52,7 @@ export const StyledRightNav = styled.div<{ open: boolean }>`
         &__link {
             position: relative;
             a {
+                text-decoration: none;
                 &::after {
                     position: absolute;
                     left: 0;

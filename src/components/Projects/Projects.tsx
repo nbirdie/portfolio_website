@@ -6,7 +6,7 @@ import { Project } from "../Project";
 
 export const Projects: FC = () => {
     return (
-        <StyledSection>
+        <StyledSection id="projects">
             <h2>Projects</h2>
             <p>
                 These are some of the projects I built to practice and get

@@ -5,7 +5,7 @@ import { StyledSection, StyledSubSection } from "./AboutMe.styles";
 
 export const AboutMe: FC = () => {
     return (
-        <StyledSection>
+        <StyledSection id="aboutme">
             <h2>About Me</h2>
             <p className="aboutme__subtitle">
                 You will find a little intro about me and the skills and
