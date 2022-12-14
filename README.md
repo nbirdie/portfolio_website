@@ -2,6 +2,11 @@
 
 This is my portfolio website
 
+## Technologies 
+* React 
+* Typescript 
+* Styled Components 
+
 ## Instruction
 1. Clone the repository
 
