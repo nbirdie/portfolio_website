@@ -5,7 +5,8 @@ export const StyledNav = styled.nav`
     top: 0;
     left: 0;
     z-index: 100;
-    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: ${({ theme }) => theme.colors.bgMain};
 
     img {
         display: none;

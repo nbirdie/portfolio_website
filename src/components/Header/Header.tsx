@@ -24,15 +24,12 @@ export const Header: FC = () => {
                         </p>
                     </h1>
                     <div className="header__links">
-                        <a className="header__link-mywork btn">See My Work</a>
-                        <a className="header__link-resume btn">View Resume</a>
+                        <a className="header__link-mywork btn" href="#projects">See My Work</a>
+                        <a className="header__link-resume btn" href={require("../../documents/ShadrinaEO.pdf")} target="_blank">View Resume</a>
                     </div>
                 </div>
                 <div className="header__picture">
-                    {/* <img src={working} alt="picture of working woman" /> */}
-         
-                        <Scene />
-     
+                        <Scene /> 
                 </div>
             </div>
         </StyledSection>

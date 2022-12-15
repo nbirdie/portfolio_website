@@ -1,2 +1,2 @@
 export {default as GlobalStyle} from "./global"
-export {baseTheme} from "./theme"
+export {baseTheme, lightTheme} from "./theme"

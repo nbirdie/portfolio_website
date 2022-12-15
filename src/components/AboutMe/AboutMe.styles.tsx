@@ -6,6 +6,7 @@ export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: ${({ theme }) => theme.colors.bgMain};
     .aboutme__subtitle {
         color: ${({ theme }) => theme.colors.font3};
     }

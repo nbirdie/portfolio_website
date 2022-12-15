@@ -28,7 +28,7 @@ export const AboutMe: FC = () => {
                             happy. Contact me if you're interested in having a
                             taste of my skills.
                         </p>
-                        <a className="btn">Contact Me</a>
+                        <a className="btn" href="#contact">Contact Me</a>
                     </div>
                     <div className="aboutme__technologies">
                         <Technologies />

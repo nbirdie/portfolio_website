@@ -7,6 +7,7 @@ export const StyledSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: ${({ theme }) => theme.colors.bgMain};
     .projects {
         &__list {
             padding-top: 2rem;

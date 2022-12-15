@@ -18,6 +18,7 @@ export const Footer = () => {
                                 <a
                                     href={href}
                                     aria-label={`my ${label} profile`}
+                                    target="_blank"
                                 >
                                     <Icon aria-hidden="true" />
                                 </a>

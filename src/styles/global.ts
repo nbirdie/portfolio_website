@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { baseTheme } from "./theme";
 
+
 //These styles ensure that there is no margin or padding on the page, except in places where they are explicitly stated
 export default createGlobalStyle`
     *{
@@ -17,7 +18,7 @@ export default createGlobalStyle`
 
     html{
         scroll-behavior: smooth;
-        background-color: ${baseTheme.colors.bgMain};
+        /* background-color: ${baseTheme.colors.bgMain}; */
         color: ${baseTheme.colors.font1};
         margin: 0 auto;
         line-height: 1.5;
