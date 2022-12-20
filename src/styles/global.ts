@@ -62,7 +62,7 @@ export default createGlobalStyle`
     }
     h5 {
         font-size: 1.2rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
         
     }
     p {

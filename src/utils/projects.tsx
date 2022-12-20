@@ -25,7 +25,7 @@ export const projects: PortfolioProject[] = [
     {
         name: "Dashboard App",
         heading: "React Admin Dashboard Template Design",
-        paragraphs: ["This project is the design of admin dashboard application.", ""],
+        paragraphs: ["This project is the design of admin dashboard application.", "It is a 3-page project which provides general data on sales, users and products with charts, tables. Additionally users can change theme which is done with Theme.Provider."],
         tech: ["React", "JavaScript", "React Router", "SCSS"],
         source: "https://github.com/nbirdie/dashboard_project",
         image: dashboard,

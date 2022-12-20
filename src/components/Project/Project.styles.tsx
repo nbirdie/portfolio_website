@@ -10,22 +10,25 @@ export const StyledProject = styled.li`
     overflow: hidden;
     margin: 0 auto;
     p {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
     img {
         width:100%;
-        height: 12rem;
+        height: 13rem;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .project {
         &__container {
+            height: 100%;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             padding: 2rem;
         }
         &__live, &__source {
             border: 0.1rem solid ${({ theme }) => theme.colors.btBlue};
+            
         }
         &__links {
             display: flex;
