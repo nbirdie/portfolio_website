@@ -14,7 +14,7 @@ export const StyledProject = styled.li`
     }
     img {
         width:100%;
-        height: 16rem;
+        height: 12rem;
         background-repeat: no-repeat;
         background-size: cover;
     }

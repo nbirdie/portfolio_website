@@ -10,7 +10,9 @@ export const StyledFooter = styled.footer`
     a,p, h5 {
                 color: ${({ theme }) => theme.colors.font3};
             }
-    
+    h5 {
+        padding-bottom: 0;
+    }
     .footer {
         &__container {
             display: flex;

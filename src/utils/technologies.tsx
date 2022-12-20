@@ -5,7 +5,6 @@ export const technologies: string[] = [
     "Javascript",
     "Typescript",
     "React",
-    "mobX",
     "Tailwind",
     "SQL",
     "Python",

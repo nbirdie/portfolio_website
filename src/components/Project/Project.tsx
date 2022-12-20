@@ -26,7 +26,7 @@ export const Project: FC<PortfolioProject> = ({
                   ))}
                 </ul>
                 <div className="project__links">
-                    <a className="project__live btn">Live</a>
+                    {/* <a className="project__live btn">Live</a> */}
                     <a className="project__source btn" href={source}>Github</a>
                 </div>
             </div>
